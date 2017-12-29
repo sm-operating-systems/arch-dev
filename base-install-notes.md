@@ -100,4 +100,6 @@ Use the [ArchLinux package search tool](https://www.archlinux.org/packages/) for
  Create user smuser with the following provlidges
  ```
   $ useradd -m -g users -G video,audio,optical,network,storage,wheel -s /bin/bash smuser
+  $ passwd smuser  "set the password for the new user
  ```
+ Run visudo and enable wheel, select ECS, :x to save and exit. Re-login as the new user and check to see if the user can install a new package.
