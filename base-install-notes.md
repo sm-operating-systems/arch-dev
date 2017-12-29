@@ -49,3 +49,19 @@ Use the pacstrap script to install the base system which is only 800M and for ot
  $ pacstrap /mnt base base-devel
 ```
 Use the [ArchLinux package search tool](https://www.archlinux.org/packages/) for all other available packages
+
+### 5. Configure the system
+
+  - Generate an fstab file and check the resulting file in /mnt/etc/fstab
+  ```
+   $ fenfstab /mnt >> /mnt/etc/fstab # to create it
+   $ cat /mnt/etc/fstab # to view the newly created file
+  ```
+  
+  - Change root into the new system
+  - Set locale and timezones
+  - Set keyboard layout 
+  - Create the hostnames file
+  - root password
+  - Boot loader
+  
