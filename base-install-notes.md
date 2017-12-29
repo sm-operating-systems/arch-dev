@@ -37,3 +37,13 @@ Mount root partition first
 ```
  $ mount /dev/sda1 /mnt # mounts the partition to the mount folder
 ```
+Create a home folder under /mnt to mount the home folder to
+```
+ $ mkdir /mnt/home
+ $ mount /dev/sda5 /mnt/home
+```
+
+### 4. Now install Arch Linux base system on /mnt
+```
+ $ pacstrap /mnt base base-devel
+```
