@@ -86,8 +86,18 @@ Use the [ArchLinux package search tool](https://www.archlinux.org/packages/) for
    $ grub-install /dev/sda
    $ grub-mkconfig -o /boot/grub/grub.cfg
  ```
- ### 5. Unmount, exit and rboot the system
+ ### 6. Unmount, exit and rboot the system
  ```
   exit, umount /mnt, umount /mnt/home, reboot
  ```
  Login with the new root password
+
+### 7. Create users with sudo privlidges
+```
+ $ pacman -Syu # get recent updates
+ $ pacman -Syy # synchronize mirror sites
+ ```
+ Create user smuser with the following provlidges
+ ```
+  $ useradd -m -g users -G video,audio,optical,network,storage,wheel -s /bin/bash smuser
+ ```
