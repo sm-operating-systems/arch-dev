@@ -32,3 +32,8 @@ Now format and enable the swap partition
  $ mkswap /dev/sda2  # to format
  $ swapon /dev/sda2  #to turn it on
 ```
+### 3. Mount the new created partitions
+Mount root partition first
+```
+ $ mount /dev/sda1 /mnt # mounts the partition to the mount folder
+```
