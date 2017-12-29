@@ -48,3 +48,4 @@ Use the pacstrap script to install the base system which is only 800M and for ot
 ```
  $ pacstrap /mnt base base-devel
 ```
+Use the [ArchLinux package search tool](https://www.archlinux.org/packages/) for all other available packages
