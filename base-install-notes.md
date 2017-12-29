@@ -64,8 +64,13 @@ Use the [ArchLinux package search tool](https://www.archlinux.org/packages/) for
   ```
    $ arch-chroot /mnt /bin/bash #enable bash under the system mnt folder
   ```
-  
   - Set locale and timezones
+  
+  Uncomment en_US.UTF* and other needed localizations in /etc/locale.gen and generate them with
+  ```
+   $ locale-gen 
+  ```
+  
   - Set keyboard layout 
   - Create the hostnames file
   - root password
