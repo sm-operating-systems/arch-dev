@@ -57,6 +57,8 @@ Use the [ArchLinux package search tool](https://www.archlinux.org/packages/) for
    $ genfstab /mnt >> /mnt/etc/fstab # to create it
    $ cat /mnt/etc/fstab # to view the newly created file
   ```
+  The contents of the fstab file should look like the following screenshot.
+  ![](screenshot2.png)
   
   - Change root into the new system
   - Set locale and timezones
