@@ -70,16 +70,14 @@ Use the [ArchLinux package search tool](https://www.archlinux.org/packages/) for
   ```
    $ locale-gen 
   ```
-  The output of locale-gen should be the following
-  ![](screenshot3.png)
-  
   - Set timezone
      - Display list of available timezones ```ls /usr/share/zoneinfo```
      - select the relevant timezone and create a link to its directory
      ```
       $  ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
      ```
-     
+  - Set hardware clock ```$ hwclock --systohc --utc-note```
+  
   - Set keyboard layout 
   - Create the hostnames file
   - root password
