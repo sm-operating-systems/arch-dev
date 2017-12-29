@@ -18,3 +18,12 @@
 ``` 
 ```fdisk -l``` output should show the following after partitions have been created
  ![](screenshot1.png)
+
+### 2. Format each partitions
+
+The "root" and the home partitions should be formatted as ext4 while the swap partition as swp.
+
+```
+$ mkfs.ext4 /dev/sda1 #root partition
+$ mkfs.ext4 /dev/sda5 #home partition
+```
