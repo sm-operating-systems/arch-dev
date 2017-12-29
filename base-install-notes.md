@@ -4,8 +4,7 @@
 
 ```
  $ pacman -Syu  # To force an update
- 
- $pacman
+ $ pacman -Syy  # to refresh mirror lists
 ```
 
 ### Create disk partitions 
@@ -13,3 +12,4 @@
 2. Create three partitions two primary types and one extended for home
 ```
  $ fdisk -l  # should show two partitions, one for the current disk size and another loopback
+ ![](screenshot-1.png)
