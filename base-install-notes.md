@@ -76,10 +76,9 @@ Use the [ArchLinux package search tool](https://www.archlinux.org/packages/) for
      ```
       $  ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
      ```
-  - Set hardware clock ```$ hwclock --systohc --utc-note```
-  
-  - Set keyboard layout 
+  - Set hardware clock ```$ hwclock --systohc --utc```
   - Create the hostnames file
-  - root password
+  Create the /etc/hostname file and enter the hostname and then enable dhcpcd ```$ systemctl dhcpcd enable``` 
+  - root password - run the passwd tool to create new root passwords
   - Boot loader
   
