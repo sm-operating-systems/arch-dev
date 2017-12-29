@@ -78,7 +78,7 @@ Use the [ArchLinux package search tool](https://www.archlinux.org/packages/) for
      ```
   - Set hardware clock ```$ hwclock --systohc --utc```
   - Create the hostnames file
-  Create the /etc/hostname file and enter the hostname and then enable dhcpcd ```$ systemctl dhcpcd enable``` 
+  Create the /etc/hostname file and enter the hostname and then enable dhcpcd ```$ systemctl enable dhcpcd``` 
   - root password - run the passwd tool to create new root passwords
   - Boot loader
   
