@@ -86,3 +86,8 @@ Use the [ArchLinux package search tool](https://www.archlinux.org/packages/) for
    $ grub-install /dev/sda
    $ grub-mkconfig -o /boot/grub/grub.cfg
  ```
+ ### 5. Unmount, exit and rboot the system
+ ```
+  exit, umount /mnt, umount /mnt/home, reboot
+ ```
+ Login with the new root password
