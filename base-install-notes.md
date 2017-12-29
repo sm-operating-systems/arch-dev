@@ -61,6 +61,10 @@ Use the [ArchLinux package search tool](https://www.archlinux.org/packages/) for
   ![](screenshot2.png)
   
   - Change root into the new system
+  ```
+   $ arch-chroot /mnt /bin/bash
+  ```
+  
   - Set locale and timezones
   - Set keyboard layout 
   - Create the hostnames file
