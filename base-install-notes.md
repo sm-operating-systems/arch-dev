@@ -80,5 +80,9 @@ Use the [ArchLinux package search tool](https://www.archlinux.org/packages/) for
   - Create the hostnames file
   Create the /etc/hostname file and enter the hostname and then enable dhcpcd ```$ systemctl enable dhcpcd``` 
   - root password - run the passwd tool to create new root passwords
-  - Boot loader
-  
+  - Boot loader - create and install a grub boot loader. Here is a sample os-graber boot loader. See the category [Boot Loaders](https://wiki.archlinux.org/index.php/Category:Boot_loaders)
+  ```
+   $ pacman -S grub os-prober
+   $ grub-install /dev/sda
+   $ grub-mkconfig -o /boot/grub/grub.cfg
+ ```
