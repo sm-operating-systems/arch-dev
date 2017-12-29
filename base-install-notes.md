@@ -14,6 +14,7 @@
    - Swap partition of type primary - must be at  least twice the size of memory
    - Home partition of type extended for home directory
 ```
- $ fdisk -l  # should show two partitions, one for the current disk size and another loopback
-```
+ $ fdisk -l  # should show two partitions, one for the current disk size and another loopback before creating partitions
+``` 
+```fdisk -l``` output should show the following after partitions have been created
  ![](screenshot1.png)
