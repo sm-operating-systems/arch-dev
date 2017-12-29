@@ -54,7 +54,7 @@ Use the [ArchLinux package search tool](https://www.archlinux.org/packages/) for
 
   - Generate an fstab file and check the resulting file in /mnt/etc/fstab
   ```
-   $ fenfstab /mnt >> /mnt/etc/fstab # to create it
+   $ genfstab /mnt >> /mnt/etc/fstab # to create it
    $ cat /mnt/etc/fstab # to view the newly created file
   ```
   
