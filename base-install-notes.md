@@ -103,3 +103,13 @@ Use the [ArchLinux package search tool](https://www.archlinux.org/packages/) for
   $ passwd smuser  "set the password for the new user
  ```
  Run visudo and enable wheel, select ECS, :x to save and exit. Re-login as the new user and check to see if the user can install a new package.
+ 
+### Errors
+1. Adjust the size of root partition on Live Arch Linux
+```
+error: partition / too full: 63256 blocks needed, 61450 blocks free
+error: not enough free disk space
+error: failed to commit transaction (not enough free disk space) 
+Errors occurred: no packages were upgraded.
+```
+press e or hit tab key to edit the kernel parameters. Go to the end of the line that says “…. linux=… initrd=….” something like that and append cow_spacesize=1G at the end to get 1GB size root partition or whatever space left from RAM.
