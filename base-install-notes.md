@@ -113,3 +113,6 @@ error: failed to commit transaction (not enough free disk space)
 Errors occurred: no packages were upgraded.
 ```
 press e or hit tab key to edit the kernel parameters. Go to the end of the line that says “…. linux=… initrd=….” something like that and append cow_spacesize=1G at the end to get 1GB size root partition or whatever space left from RAM.
+
+### References
+1. [Linux Base Install - Video](https://www.youtube.com/watch?v=4PBqpX0_UOc)
