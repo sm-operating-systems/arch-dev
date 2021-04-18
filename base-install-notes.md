@@ -46,7 +46,7 @@ Create a home folder under /mnt to mount the home folder to
 ### 4. Now install Arch Linux base system on /mnt
 Use the pacstrap script to install the base system which is only 800M and for other development tools use base-devel
 ```
- $ pacstrap /mnt base base-devel
+ $ pacstrap /mnt base base-devel linux linux-firmware os-prober networkmanager vim
 ```
 Use the [ArchLinux package search tool](https://www.archlinux.org/packages/) for all other available packages
 
