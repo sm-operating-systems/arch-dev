@@ -6,3 +6,5 @@
  $ sudo pacman -S xorg xorg-server
  ```
  
+Reference
+[Desktop](https://www.youtube.com/watch?v=nSHOb8YU9Gw)
