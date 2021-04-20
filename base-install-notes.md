@@ -6,6 +6,10 @@
  $ pacman -Syu  # To force an update
  $ pacman -Syy  # to refresh mirror lists
 ```
+### Pre-installs
+1. Check internet connection 
+2. Set timedatectl to ntp
+ ```$ timedatectl set-ntp true```
 
 ### 1. Create disk partitions 
 1. Run cfdisk and choose option dos
@@ -78,6 +82,7 @@ Use the [ArchLinux package search tool](https://www.archlinux.org/packages/) for
      ```
   - Set hardware clock ```$ hwclock --systohc --utc```
   - Create the hostnames file
+  - Enable NetworkManager (systemctl enable NetworkManager)
   Create the /etc/hostname file and enter the hostname and then enable dhcpcd ```$ systemctl enable dhcpcd``` 
   - root password - run the passwd tool to create new root passwords
   - Boot loader - create and install a grub boot loader. Here is a sample os-graber boot loader. See the category [Boot Loaders](https://wiki.archlinux.org/index.php/Category:Boot_loaders)
